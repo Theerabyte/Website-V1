@@ -2,35 +2,35 @@ div.doc{
     background-color: rgba(0, 3, 196, 0.763);
     padding: 0.5rem 0;
 }
-.header{
-    color: rgb(211, 211, 254);
-    background-color: rgb(60, 26, 120);
-    padding: 8px 4px 3px;
+#header{
+    background-color: blue;
+    padding: 3px 4px;
 }
 a{
-    color: rgb(3, 255, 255);
-    background-color:rgb(19, 216, 255);
+    color: rgb(0, 0, 0);
+    background-color:rgb(210, 214, 214);
     padding: 0px 6px;
 }
 h1{
-    color: rgb(255, 255, 255);
-    background-color: aqua;
+    color: rgb(255, 0, 132);
+    background-color:blue;
     padding: 8px 4px 3px;
 }
 h2{
-    color: rgb(175, 132, 3);
-    background-color: darkslategrey;
+    color: rgb(157, 0, 255);
+    background-color: rgb(255, 0, 200);
     padding: 0px 6px;
 }
 h3{
-    color: rgb(121, 124, 128);
-    background-color: rgb(2, 130, 130);
+    color: orangered;
+    background-color: orange;
     padding: 0px 6px;
 }
-.img {
+img {
     height: 45%;
+    width: 20%;
     aspect-ratio: 1/1;
     background-size: cover;
-    border: .5rem rgba(0, 0, 0, .5) solid;
+    border: .5rem rgb(0, 129, 37) solid;
     border-radius: 100vh;
 }

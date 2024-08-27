@@ -27,10 +27,18 @@ h3{
     padding: 0px 6px;
 }
 img {
-    height: 45%;
-    width: 20%;
+    height: 50%;
+    width: 18%;
     aspect-ratio: 1/1;
     background-size: cover;
     border: .5rem rgb(0, 129, 37) solid;
     border-radius: 100vh;
+}
+.foter{
+    margin:20px;
+    padding: 12px, 300px;
+}
+footer{
+    color: darkolivegreen;
+    background-color: darkred;
 }

@@ -64,6 +64,13 @@ body {
     background-color: #381afa5d;
     color: #444;
 }
+a:link, a:visited {
+    color: rgb(0, 0, 0);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
 
 /* CONTENT ------------------------------------------ */
 
@@ -75,7 +82,9 @@ body {
     background-color: blue;
 }
 h2{
-    color: magenta;
+    color: yellow;
+    background-color: #101012;
+    padding: 5px 4px;
 }
 article{
     color: white;
@@ -92,7 +101,8 @@ aside {
     color: white
 }
 h3{
-    color: cyan;
+    color: rgb(255, 247, 0);
+
 }
 /* FOOTER ------------------------------------------ */
 
@@ -118,7 +128,7 @@ img{
 /* Button ------------------------------------------- */
 
 #button1 { /* ------------- Blue -------------------- */
-    border:non;
+    border:none;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -126,7 +136,7 @@ img{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer; 
-    background-color: #002FA7;
+    background-color: #ff0000;
 }
 
 #button2 { /* ------------ Green -------------------- */

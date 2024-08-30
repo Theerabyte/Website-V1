@@ -6,42 +6,44 @@
     <link rel="stylesheet" href="./index.css">
     <title>Formular M293 Teil 1</title>
 </head>
-<body>
-    <div><h1>Hello; Please state your credidentials:</h1></div>
-    <br>
-<form id="Formular">
-    <Label for="Snm">Surname :
-        <input id="Snm" name="Snm" required>
-    </Label>
-    <label for="Fnm">Familyname :
-        <input id="Fnm" name="Fnm" required>
-    </label>
+<body style="margin: 15%;">
+        <div><h1>Hello; Please state your credidentials:</h1></div>
+<br>
+    <form id="Formular" style="background-color: #eee; padding: 1em;">
+        <Label for="Snm">Surname :
+            <input id="Snm" name="Snm" required>
+        </Label>
+        <label for="Fnm">Familyname :
+            <input id="Fnm" name="Fnm" required>
+        </label>
 <br>
 <hr>
 <br>
-    <label for="ma">male</label>
-        <intput type="radio" id="ma" name="gender" value="1">
-    <label for="fem">female</label>
-        <input type="radio" id="fem" name="gender" value="2">
-    <label for="queer">non-binary</label>
-        <input type="radio" id="qu" name="gender" value="3">
+        <label for="ma"></label>
+            <intput type="radio" id="ma" name="gender" value="0">
+        <label for="mela">male</label>
+            <input type="radio" id="mela" name="gender" value="1">
+        <label for="fem">female</label>
+            <input type="radio" id="fem" name="gender" value="2">
+        <label for="queer">non-binary</label>
+            <input type="radio" id="qu" name="gender" value="2">
 <br>
 <br>
-    <label for="age">over 18 :</label>
-        <input type="checkbox" id="age" name="age" required>
+        <label for="age">over 18 :</label>
+            <input type="checkbox" id="age" name="age" required>
 <br>
 <br>
-    <label for="email">Email</label>    
-        <input type="email" id="email" name="email" required>
+        <label for="email">Email</label>    
+            <input type="email" id="email" name="email" required>
 <hr>
 <br>
-    <input type="submit" value="send">
-</form>
+        <input type="submit" value="send" style="background-color: rgb(221, 47, 58);">
+    </form>
 <br>
 <br>
 <hr>
 <br>
-<a href="/Teil1/index.html">Back to Webpage</a>
+<a href="./index.html" style="color: blue;">Back to Webpage</a>
 </body>
 <footer>Thank you for filling in this Form</footer>
 </html>

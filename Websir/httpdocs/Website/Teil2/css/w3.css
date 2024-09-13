@@ -118,11 +118,6 @@ img {
     border-style: none
 }
 
-.instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    color: white;
-}
-
 code,
 kbd,
 pre,
@@ -179,7 +174,7 @@ button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-    outline: 1px dotted ButtonText
+    outline: 1px dotted ButtonText;
 }
 
 fieldset {

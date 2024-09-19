@@ -2,7 +2,7 @@
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header.jpg);
-    height: 100vh;
+    height: 99vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,7 +57,7 @@ div.linkedin{
     }
 }
 
-/* -------------- Allgemeines ------------- */
+/* -------------- General ------------- */
 
 .w3-button {
     border: none;
@@ -71,6 +71,11 @@ div.linkedin{
     text-align: center;
     cursor: pointer;
     white-space: nowrap
+}
+
+#map{
+  background-color: blue;
+  color:aliceblue;
 }
 
 /* -------------- Modal CSS ---------------- */

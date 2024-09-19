@@ -73,10 +73,20 @@ div.linkedin{
     white-space: nowrap
 }
 
-#map{
-  background-color: blue;
-  color:aliceblue;
+.thbtn{
+  text-align: center;
+  margin: 2%;
 }
+.oediv{
+  background-color: #007bb5;
+  margin: 12%, 0%;
+}
+#vid{
+  height: 600px;
+  width: 400px;
+  margin-left: 45%;
+}
+
 
 /* -------------- Modal CSS ---------------- */
 #myBtn{
@@ -93,6 +103,7 @@ div.linkedin{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
+    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%; /* Full width */

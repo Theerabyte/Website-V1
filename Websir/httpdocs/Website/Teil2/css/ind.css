@@ -1,3 +1,17 @@
+/*---------------- Main Bild ----------------*/
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+/*-------------- Icons ---------------*/
+
 div.facebook{
     background: #3B5998;
     color: white;
@@ -43,13 +57,7 @@ div.linkedin{
     }
 }
 
-/* Allgemeines 
-
-h3{
-    color:orange; 
-    background-color:lightgray;
-    padding:0px 6px;
-}*/
+/* -------------- Allgemeines ------------- */
 
 .w3-button {
     border: none;
@@ -96,8 +104,7 @@ h3{
   /* Content */
   .modal-content {
     color:black;
-    position: fixed;
-    bottom: 0;
+    position: center;
     background-color: #fefefe;
     width: 100%;
     -webkit-animation-name: slideIn;

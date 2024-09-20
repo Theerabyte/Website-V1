@@ -93,17 +93,16 @@ div.linkedin{
     margin: 2%;
     color: black;
     background-color: rgb(255, 255, 255);
+    border-radius: 4px;
 }
 #myBtn:hover{
-    color: blue;
-    background-color:orange;
+    opacity: 70%;;
 }
 /* Bg Modal*/
 .modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px;
+    position: fixed; 
+    padding: 10% 10%;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -126,11 +125,16 @@ div.linkedin{
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
   }
   .modal-body{
     display: flex;
-    flex-direction: Left;
+    margin-left: 20%;
+    width: 80%;
+  }
+
+  .modal-info {
+    float: le;
   }
   
   /* Xbtn*/

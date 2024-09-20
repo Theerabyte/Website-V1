@@ -47,28 +47,41 @@ div.linkedin{
   white-space: nowrap
 }
 
+#vi{
+  display:inline;
+  color:black;
+  background-color:rgb(80, 49, 182);
+  margin: 0px;
+}
+
 .oediv{
   margin: 12% 0%;
+  display: flex;
+  align-items: center;  
 }
 #vid{
-  height: 700px;
-  width: 500px;
+  height: 650px;
+  width: 450px;
   display: inline;
-  padding: 2%;
+  padding: 1%;
 }
 #ivd{
-  height: 700px;
-  width: 500px;
+  height: 650px;
+  width: 450px;
   display: inline;
   padding: 1%;
 }
 #div{
-  height: 700px;
-  width: 500px;
+  height: 650px;
+  width: 450px;
   display: inline;
-  padding: 2%;
+  padding: 1%;
 }
 
+.bruchdsgliche {
+  height: 60vh;
+  width: 25vw;
+}
 
 /* -------------- Modal CSS ---------------- */
 #myBtn{
@@ -113,6 +126,7 @@ div.linkedin{
 .modal-body{ /* Normal Body */
   display: flex;
   margin-left: 35%;
+  padding: 2px 16px;
   width: 80%;
 }
 .modal-sied-body{ /* Small screen Body */
@@ -134,19 +148,6 @@ div.linkedin{
   color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
-}
-
-/*Header & Footer*/
-.modal-header {
-  padding: 2px 16px;
-  background-color: rgb(0, 145, 255);
-  color: white;
-}
-.modal-body {padding: 2px 16px;}
-.modal-footer {
-padding: 2px 16px;
-background-color: rgb(37, 37, 255);
-color: white;
 }
 
 /* Animation */

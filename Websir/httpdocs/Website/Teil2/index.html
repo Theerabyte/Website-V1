@@ -13,56 +13,83 @@
     <link rel="stylesheet" href="./css/ind.css">
 
 </head>
+
 <body id="myPage">
 
     <!-- Sidebar on click -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
+        id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright">Close
-    <i class="fa fa-remove"></i>
-  </a>
-        <a href="./img/nuova/ibed.jpg" class="w3-bar-item w3-button w3-theme-l2 w3-hover-gray" target="_blank"><i class="fa fa-sliders"></i></a>
-        <a href="./img/nuova/leg.jpg"  class="w3-bar-item w3-button w3-theme-l3 w3-hover-gray" target="_blank"><i class="fa fa-slack"></i></a>
-        <a href="./img/nuova/obed.jpg" class="w3-bar-item w3-button w3-theme-l2 w3-hover-gray" target="_blank"><i class="fa fa-book"></i></a>
+            <i class="fa fa-remove"></i>
+        </a>
+        <a href="./img/nuova/ibed.jpg" class="w3-bar-item w3-button w3-theme-l2 w3-hover-gray" target="_blank"><i
+                class="fa fa-sliders"></i></a>
+        <a href="./img/nuova/leg.jpg" class="w3-bar-item w3-button w3-theme-l3 w3-hover-gray" target="_blank"><i
+                class="fa fa-slack"></i></a>
+        <a href="./img/nuova/obed.jpg" class="w3-bar-item w3-button w3-theme-l2 w3-hover-gray" target="_blank"><i
+                class="fa fa-book"></i></a>
     </nav>
 
     <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar w3-theme-d2 w3-left-align">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a href="./index.html#"        class="w3-bar-item w3-button w3-theme-l4 w3-hover-white"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-            <a href="./index.html#team"    class="w3-bar-item w3-button w3-hide-small w3-theme-l3 w3-hover-white"><i class="fa fa-heart w3-margin-right"></i>Team</a>
-            <a href="./index.html#work"    class="w3-bar-item w3-button w3-hide-small w3-theme-l4 w3-hover-white"><i class="fa fa-folder w3-margin-right"></i>Work</a>
-            <a href="./index.html#pricing" class="w3-bar-item w3-button w3-hide-small w3-theme-l3 w3-hover-white"><i class="fa fa-dollar w3-margin-right"></i>Price</a>
-            <a href="./index.html#vi"     class="w3-bar-item w3-button w3-hide-small w3-theme-l4 w3-hover-white"><i class="fa fa-camera w3-margin-right"></i>Videos</a>
-            <a href="./index.html#contact" class="w3-bar-item w3-button w3-hide-small w3-theme-l3 w3-hover-white"><i class="fa fa-phone w3-margin-right"></i>Contact</a>
-            <a href="./index.html#map"     class="w3-bar-item w3-button w3-hide-small w3-theme-l4 w3-hover-white"><i class="fa fa-map-marker w3-margin-right"></i>Map</a>
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+                href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="./index.html#" class="w3-bar-item w3-button w3-theme-l4 w3-hover-white"><i
+                    class="fa fa-home w3-margin-right"></i>Logo</a>
+            <a href="./index.html#team" class="w3-bar-item w3-button w3-hide-small w3-theme-l3 w3-hover-white"><i
+                    class="fa fa-heart w3-margin-right"></i>Team</a>
+            <a href="./index.html#work" class="w3-bar-item w3-button w3-hide-small w3-theme-l4 w3-hover-white"><i
+                    class="fa fa-folder w3-margin-right"></i>Work</a>
+            <a href="./index.html#pricing" class="w3-bar-item w3-button w3-hide-small w3-theme-l3 w3-hover-white"><i
+                    class="fa fa-dollar w3-margin-right"></i>Price</a>
+            <a href="./index.html#vi" class="w3-bar-item w3-button w3-hide-small w3-theme-l4 w3-hover-white"><i
+                    class="fa fa-camera w3-margin-right"></i>Videos</a>
+            <a href="./index.html#contact" class="w3-bar-item w3-button w3-hide-small w3-theme-l3 w3-hover-white"><i
+                    class="fa fa-phone w3-margin-right"></i>Contact</a>
+            <a href="./index.html#map" class="w3-bar-item w3-button w3-hide-small w3-theme-l4 w3-hover-white"><i
+                    class="fa fa-map-marker w3-margin-right"></i>Map</a>
             <div class="w3-dropdown-hover w3-hide-small">
-                <button class="w3-button w3-theme-l1 w3-hover-white" title="Notifications"><i class="fa fa-arrow-down w3-margin-right"></i>Dropdown</button> <!--<i class="fa fa-caret-down"></i>-->
+                <button class="w3-button w3-theme-l1 w3-hover-white" title="Notifications"><i
+                        class="fa fa-arrow-down w3-margin-right"></i>Dropdown</button>
+                <!--<i class="fa fa-caret-down"></i>-->
                 <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-                    <a href="./img/1.jpg" class="w3-bar-item w3-button w3-theme-l2 w3-hover-white" target="_blank">Link 1</a>
-                    <a href="./img/2.jpg" class="w3-bar-item w3-button w3-theme-l3 w3-hover-white" target="_blank">Link 2</a>
-                    <a href="./img/3.jpg" class="w3-bar-item w3-button w3-theme-l2 w3-hover-white" target="_blank">Link 3</a>
-                    <a href="./img/4.jpg" class="w3-bar-item w3-button w3-theme-l3 w3-hover-white" target="_blank">Link 4</a>
-                    <a href="./img/5.jpg" class="w3-bar-item w3-button w3-theme-l2 w3-hover-white" target="_blank">Link 5</a>
-                    <a href="./img/6.jpg" class="w3-bar-item w3-button w3-theme-l3 w3-hover-white" target="_blank">Link 6</a>
+                    <a href="./img/1.jpg" class="w3-bar-item w3-button w3-theme-l2 w3-hover-white" target="_blank">Link
+                        1</a>
+                    <a href="./img/2.jpg" class="w3-bar-item w3-button w3-theme-l3 w3-hover-white" target="_blank">Link
+                        2</a>
+                    <a href="./img/3.jpg" class="w3-bar-item w3-button w3-theme-l2 w3-hover-white" target="_blank">Link
+                        3</a>
+                    <a href="./img/4.jpg" class="w3-bar-item w3-button w3-theme-l3 w3-hover-white" target="_blank">Link
+                        4</a>
+                    <a href="./img/5.jpg" class="w3-bar-item w3-button w3-theme-l2 w3-hover-white" target="_blank">Link
+                        5</a>
+                    <a href="./img/6.jpg" class="w3-bar-item w3-button w3-theme-l3 w3-hover-white" target="_blank">Link
+                        6</a>
                 </div>
             </div>
         </div>
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-            <a href="./index.html#team"    class="w3-bar-item w3-button w3-theme-l3 w3-hover-white"><i class="fa fa-heart w3-margin-right"></i>Team</a>
-            <a href="./index.html#work"    class="w3-bar-item w3-button w3-theme-l4 w3-hover-white"><i class="fa fa-folder w3-margin-right"></i>Work</a>
-            <a href="./index.html#pricing" class="w3-bar-item w3-button w3-theme-l3 w3-hover-white"><i class="fa fa-dollar w3-margin-right"></i>Price</a>
-            <a href="./index.html#vi"     class="w3-bar-item w3-button w3-theme-l4 w3-hover-white"><i class="fa fa-camera w3-margin-right"></i>Videos</a>
-            <a href="./index.html#contact" class="w3-bar-item w3-button w3-theme-l3 w3-hover-white"><i class="fa fa-phone w3-margin-right"></i>Contact</a>
-            <a href="./index.html#map"     class="w3-bar-item w3-button w3-theme-l4 w3-hover-white"><i class="fa fa-map-marker w3-margin-right"></i>Map</a>
+            <a href="./index.html#team" class="w3-bar-item w3-button w3-theme-l3 w3-hover-white"><i
+                    class="fa fa-heart w3-margin-right"></i>Team</a>
+            <a href="./index.html#work" class="w3-bar-item w3-button w3-theme-l4 w3-hover-white"><i
+                    class="fa fa-folder w3-margin-right"></i>Work</a>
+            <a href="./index.html#pricing" class="w3-bar-item w3-button w3-theme-l3 w3-hover-white"><i
+                    class="fa fa-dollar w3-margin-right"></i>Price</a>
+            <a href="./index.html#vi" class="w3-bar-item w3-button w3-theme-l4 w3-hover-white"><i
+                    class="fa fa-camera w3-margin-right"></i>Videos</a>
+            <a href="./index.html#contact" class="w3-bar-item w3-button w3-theme-l3 w3-hover-white"><i
+                    class="fa fa-phone w3-margin-right"></i>Contact</a>
+            <a href="./index.html#map" class="w3-bar-item w3-button w3-theme-l4 w3-hover-white"><i
+                    class="fa fa-map-marker w3-margin-right"></i>Map</a>
         </div>
     </div>
 
     <!-- Image Header 
     <div class="hero-image">-->
-        <img src="./img/bot.jpg" alt="Iván" style="width:100%;min-height:100%;max-height:100%;">
+    <img src="./img/bot.jpg" alt="Iván" style="width:100%;min-height:100%;max-height:100%;">
     <!--</div>-->
 
     <!-- Modal von W3.css
@@ -102,7 +129,7 @@
         </div>
     </div>
 
-<!-- -- Buttons zu den Themes -- // wieder rausgenommen -> auftrag potentiell falsch verstanden //
+    <!-- -- Buttons zu den Themes -- // wieder rausgenommen -> auftrag potentiell falsch verstanden //
 <div class="thbtn w3-theme-d4">
     <h2>Themes of the Page:</h2>
     <button><a rel="stylesheet" href="./css/w3-theme-red.css" alt="">RED</a></button>
@@ -115,9 +142,10 @@
     <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
 
         <div class="w3-quarter">
-            <h2  style="color:rgb(27, 10, 151);background-color:white;padding:0px 6px"><b>Work Activities</b></h2>
+            <h2 style="color:rgb(27, 10, 151);background-color:white;padding:0px 6px"><b>Work Activities</b></h2>
             <p>
-               My kitten is very active and does lots of stuff through out a day, the activities he does most are the following:
+                My kitten is very active and does lots of stuff through out a day, the activities he does most are the
+                following:
             </p>
         </div>
 
@@ -127,7 +155,8 @@
                 <div class="w3-activ">
                     <h3 style="color:rgb(27, 10, 151);background-color:lightgray;padding:0px 6px;"><b>Action 1</b></h3>
                     <h4>Being clean</h4>
-                    <p>Cats in general are very clean animals, but Iván in particular makes grooming one of his top priotyties in a day.</p>
+                    <p>Cats in general are very clean animals, but Iván in particular makes grooming one of his top
+                        priotyties in a day.</p>
                 </div>
             </div>
         </div>
@@ -138,7 +167,8 @@
                 <div class="w3-activ">
                     <h3 style="color:rgb(27, 10, 151);background-color:lightgray;padding:0px 6px;"><b>Action 2</b></h3>
                     <h4>Hunt food</h4>
-                    <p>Since Iváns third week living with me, he has been strongly contributing to the family. A mouse atleast once a week.</p>
+                    <p>Since Iváns third week living with me, he has been strongly contributing to the family. A mouse
+                        atleast once a week.</p>
                 </div>
             </div>
         </div>
@@ -149,7 +179,8 @@
                 <div class="w3-activ">
                     <h3 style="color:rgb(27, 10, 151);background-color:lightgray;padding:0px 6px;"><b>Action 3</b></h3>
                     <h4>Gawking</h4>
-                    <p>Iván also likes to stare at his enemies and their teritory or just at random passerbys. Although he doesn't do it very seriously.</p>
+                    <p>Iván also likes to stare at his enemies and their teritory or just at random passerbys. Although
+                        he doesn't do it very seriously.</p>
                 </div>
             </div>
         </div>
@@ -158,7 +189,8 @@
 
     <!-- Sidebar -->
     <div class="w3-container" style="position:relative">
-        <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-theme-d5" target="_blank" style="position:absolute;top:-28px;right:24px">+</a>
+        <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-theme-d5" target="_blank"
+            style="position:absolute;top:-28px;right:24px">+</a>
     </div>
 
     <!-- Pricing Row -->
@@ -179,7 +211,40 @@
                     <span class="w3-opacity">per month</span>
                 </li>
                 <li class="w3-theme-l5 w3-padding-24">
-                    <button class="w3-button w3-theme-l2 w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+                    <button id="basicButton" class="w3-button w3-theme-l2 w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+                    <div id="basicModal" class="modal">
+                        <!--basic-->
+                        <div class="w3-row-padding w3-center w3-padding-32 w3-theme-l3">
+                            <span class="basicClose">&times;</span>
+                            <h1>Thank you for signing up!</h1>
+                            <h2>Your Credit Card Information has been registered</h2>
+                            <h3>Your fantastic choice:</h3>
+                            <br>
+                            <div class="w3-third w3-margin-bottom">
+
+                                <img class="bruchdsgliche" src="https://cataas.com/cat" alt="random cat image">
+
+                            </div>
+                            <div class="w3-third w3-margin-bottom">
+                                <ul class="w3-ul w3-border w3-hover-shadow w3-theme-l5">
+                                    <li class="w3-theme-d1">
+                                        <p class="w3-xlarge">Basic</p>
+                                    </li>
+                                    <li class="w3-padding-16"><b>15'</b> Time</li>
+                                    <li class="w3-padding-16"><b>10</b> Bellyrubs</li>
+                                    <li class="w3-padding-16"><b>5</b> Chinscratshes</li>
+                                    <li class="w3-padding-16"><b>Endless</b> Purring</li>
+                                    <li class="w3-padding-16">
+                                        <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
+                                        <span class="w3-opacity">per month</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w3-third w3-margin-bottom">
+                                <img class="bruchdsgliche" src="https://cataas.com/cat" alt="random cat image">
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -198,7 +263,40 @@
                     <span class="w3-opacity">per month</span>
                 </li>
                 <li class="w3-theme-l5 w3-padding-24">
-                    <button class="w3-button w3-theme-l1 w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+                    <button id="proButton" class="w3-button w3-theme-l1 w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+                    <div id="proModal" class="modal">
+                        <!--pro-->
+                        <div class="w3-row-padding w3-center w3-padding-32 w3-theme-l3">
+                            <span class="proClose">&times;</span>
+                            <h1>Thank you for signing up!</h1>
+                            <h2>Your Credit Card Information has been registered</h2>
+                            <h3>Your fantastic choice:</h3>
+                            <br>
+                            <div class="w3-third w3-margin-bottom">
+
+                                <img class="bruchdsgliche" src="https://cataas.com/cat" alt="random cat image">
+
+                            </div>
+                            <div class="w3-third w3-margin-bottom">
+                                <ul class="w3-ul w3-border w3-hover-shadow w3-theme-l5">
+                                    <li class="w3-theme-d1">
+                                        <p class="w3-xlarge">Pro</p>
+                                    </li>
+                                    <li class="w3-padding-16"><b>30'</b> Time</li>
+                                    <li class="w3-padding-16"><b>25</b> Bellyrubs</li>
+                                    <li class="w3-padding-16"><b>10</b> Chinscratshes</li>
+                                    <li class="w3-padding-16"><b>Endless</b> Purring</li>
+                                    <li class="w3-padding-16">
+                                        <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
+                                        <span class="w3-opacity">per month</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w3-third w3-margin-bottom">
+                                <img class="bruchdsgliche" src="https://cataas.com/cat" alt="random cat image">
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -217,13 +315,47 @@
                     <span class="w3-opacity">per month</span>
                 </li>
                 <li class="w3-theme-l5 w3-padding-24">
-                    <button class="w3-button w3-theme-d1 w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+                    <button id="premiumButton" class="w3-button w3-theme-d1 w3-padding-large"><i
+                            class="fa fa-check"></i> Sign Up</button>
+                    <div id="premiumModal" class="modal">
+                        <!--premium-->
+                        <div class="w3-row-padding w3-center w3-padding-32 w3-theme-l3">
+                            <span class="premiumClose">&times;</span>
+                            <h1>Thank you for signing up!</h1>
+                            <h2>Your Credit Card Information has been registered</h2>
+                            <h3>Your fantastic choice:</h3>
+                            <br>
+                            <div class="w3-third w3-margin-bottom">
+
+                                <img class="bruchdsgliche" src="https://cataas.com/cat" alt="random cat image">
+
+                            </div>
+                            <div class="w3-third w3-margin-bottom">
+                                <ul class="w3-ul w3-border w3-hover-shadow w3-theme-l5">
+                                    <li class="w3-theme-d1">
+                                        <p class="w3-xlarge">Premium</p>
+                                    </li>
+                                    <li class="w3-padding-16"><b>55'</b> Time</li>
+                                    <li class="w3-padding-16"><b>50</b> Bellyrubs</li>
+                                    <li class="w3-padding-16"><b>45</b> Chinscratshes</li>
+                                    <li class="w3-padding-16"><b>Endless</b> Purring</li>
+                                    <li class="w3-padding-16">
+                                        <h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
+                                        <span class="w3-opacity">per month</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w3-third w3-margin-bottom">
+                                <img class="bruchdsgliche" src="https://cataas.com/cat" alt="random cat image">
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
     </div>
 
-<!-- ------ Video von Iván -------- -->
+    <!-- ------ Video von Iván -------- -->
     <div id="vi">
         <div class="w3-row-padding w3-center w3-padding-32 w3-theme-l3" id="pricing">
             <div class="w3-third w3-margin-bottom">
@@ -231,7 +363,7 @@
                     <li>Funny video 1</li>
                     <li class="w3-theme-l2">
                         <video class="bruchdsgliche" controls>
-                            <source src="img/vid.mp4" type="video/mp4" >
+                            <source src="img/vid.mp4" type="video/mp4">
                             Your browser does not support HTML video.
                         </video>
                     </li>
@@ -251,8 +383,8 @@
                 <ul class="w3-ul w3-border w3-hover-shadow w3-theme-l5">
                     <li>Funny video 2</li>
                     <li class="w3-theme-d3">
-                        <video class="bruchdsgliche"controls>
-                            <source src="img/vid 2.mp4" type="video/mp4" >
+                        <video class="bruchdsgliche" controls>
+                            <source src="img/vid 2.mp4" type="video/mp4">
                             Your browser does not support HTML video.
                         </video>
                     </li>
@@ -273,7 +405,8 @@
                 <p><i class="fa fa-envelope w3-theme-blue w3-xlarge"></i>&nbsp;&nbsp;support@ivan-w-ag.ch</p>
             </div>
             <div class="w3-col m7">
-                <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="https://www.w3schools.com/action_page.php" target="_blank">
+                <form class="w3-container w3-card-4 w3-padding-16 w3-white"
+                    action="https://www.w3schools.com/action_page.php" target="_blank">
                     <div class="w3-section">
                         <label>Name</label>
                         <input class="w3-input" type="text" name="Name" required="">
@@ -296,108 +429,178 @@
 
     <!-- Map -->
     <div class="w3-row-padding w3-center w3-theme-d1" id="map">
-     <h1>Map</h1>
-    <img src="./img/mape.png" class="w3-image w3-greyscale-min" style="width:100%;" alt="Map to a beautiful bench">
-    <iframe width=100% height="500" src="https://www.openstreetmap.org/export/embed.html?bbox=7.5663185119628915%2C46.97004764645627%2C7.576360702514649%2C46.97549430434931&amp;layer=mapnik&amp;marker=46.97277087159815%2C7.5713396072387695" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/?mlat=46.972771&amp;mlon=7.571340#map=17/46.972771/7.571340">View Larger Map</a></small>
+        <h1>Map</h1>
+        <img src="./img/mape.png" class="w3-image w3-greyscale-min" style="width:100%;" alt="Map to a beautiful bench">
+        <iframe width=100% height="500"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=7.5663185119628915%2C46.97004764645627%2C7.576360702514649%2C46.97549430434931&amp;layer=mapnik&amp;marker=46.97277087159815%2C7.5713396072387695"
+            style="border: 1px solid black"></iframe><br><small><a
+                href="https://www.openstreetmap.org/?mlat=46.972771&amp;mlon=7.571340#map=17/46.972771/7.571340">View
+                Larger Map</a></small>
 
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-32 w3-theme-d3 w3-center">
-        <h4>Follow Us</h4>
-            <div class="facebook"><a class="w3-button"  href="javascript:void(0)" title="Facebook">  <i class="fa fa-facebook"></i></a></div>
-            <div class="twitter"><a class="w3-button"   href="javascript:void(0)" title="Twitter">   <i class="fa fa-twitter"></i></a></div>
-            <div class="youtube"><a class="w3-button"   href="javascript:void(0)" title="Youtube">   <i class="fa fa-youtube"></i></a></div>
-            <div class="instagram"><a class="w3-button" href="javascript:void(0)" title="instagram"> <i class="fa fa-instagram"></i></a></div>
-            <div class="linkedin"><a class="w3-button"  href="javascript:void(0)" title="Linkedin">  <i class="fa fa-linkedin"></i></a></div>
-<br>
-<!--OpenModal-->
-    <button id="myBtn">Modal Impressum - Open Me!</button>
-<!--Modal-->
-    <div id="myModal" class="modal">
-<!--Content-->
-        <div class="w3-row-padding w3-center w3-padding-32 w3-theme-l3">
-            <span class="close">&times;</span>
-            <h2>IMPRESSUM</h2>
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-theme-d3 w3-center">
+            <h4>Follow Us</h4>
+            <div class="facebook"><a class="w3-button" href="javascript:void(0)" title="Facebook"> <i
+                        class="fa fa-facebook"></i></a></div>
+            <div class="twitter"><a class="w3-button" href="javascript:void(0)" title="Twitter"> <i
+                        class="fa fa-twitter"></i></a></div>
+            <div class="youtube"><a class="w3-button" href="javascript:void(0)" title="Youtube"> <i
+                        class="fa fa-youtube"></i></a></div>
+            <div class="instagram"><a class="w3-button" href="javascript:void(0)" title="instagram"> <i
+                        class="fa fa-instagram"></i></a></div>
+            <div class="linkedin"><a class="w3-button" href="javascript:void(0)" title="Linkedin"> <i
+                        class="fa fa-linkedin"></i></a></div>
             <br>
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-hover-shadow w3-theme-l2">
-                    <li><b>Ivan-Wasili-AG</b></li>
-                    <li>Gummihöhi 1, 3068 Utzigen</li>
-                    <li>Schweiz</li>
-                    <li><b>Support</b></li>
-                    <li>+41 77 666 33 44</li>
-                    <li>support@ivan-w-ag.ch</li>
-                    <li>Images : all provided by our AG owner</li>
-                    <li>Videos : all provided by our AG owner</li>
-                </ul>
+            <!--OpenModal-->
+            <button id="myBtn">Modal Impressum - Open Me!</button>
+            <!--Modal-->
+            <div id="myModal" class="modal">
+                <!--Content-->
+                <div class="w3-row-padding w3-center w3-padding-32 w3-theme-l3">
+                    <span class="close">&times;</span>
+                    <h2>IMPRESSUM</h2>
+                    <br>
+                    <div class="w3-third w3-margin-bottom">
+                        <ul class="w3-ul w3-border w3-hover-shadow w3-theme-l2">
+                            <li><b>Ivan-Wasili-AG</b></li>
+                            <li>Gummihöhi 1, 3068 Utzigen</li>
+                            <li>Schweiz</li>
+                            <li><b>Support</b></li>
+                            <li>+41 77 666 33 44</li>
+                            <li>support@ivan-w-ag.ch</li>
+                            <li>Images : all provided by our AG owner</li>
+                            <li>Videos : all provided by our AG owner</li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-third w3-margin-bottom">
+                        <ul class="w3-ul w3-border w3-hover-shadow w3-theme-l5">
+                            <li>Our owner</li>
+                            <li class="w3-theme-l1">
+                                <img src="img/8.jpg" alt="Ivan">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <br>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-hover-shadow w3-theme-l5">
-                    <li>Our owner</li>
-                    <li class="w3-theme-l1">
-                    <img src="img/8.jpg" alt="Ivan">
-                    </li>
-                </ul>
+            <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+                <!--<span class="w3-text w3-padding w3-hide-small">Top</span>-->
+                <a class="w3-button w3-theme-blue" href="./index.html#"><span class="w3-xlarge">
+                        <i class="fa fa-chevron-circle-up"></i></span></a>
             </div>
-        </div>
-    </div> 
-<br>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </footer>
 
-        <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-            <!--<span class="w3-text w3-padding w3-hide-small">Top</span>-->
-            <a class="w3-button w3-theme-blue" href="./index.html#"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-        </div>
-    </footer>
+        <script>
+            // ------------------------ Script for basic
+            // Get modal, button, <span>
+            var basicModal = document.getElementById("basicModal");
+            var basicButton = document.getElementById("basicButton");
+            var basicClose = document.getElementsByClassName("basicClose")[0];
 
-    <script>
-// ------------------------ Script for Modal
-    // Get modal, button, <span>
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
+            // UserClick-button = open
+            basicButton.onclick = function () {
+                basicModal.style.display = "block";
+            }
+            // UserClick-<span>(x) = close
+            basicClose.onclick = function () {
+                basicModal.style.display = "none";
+            }
+            // UserClick-Outside = close
+            window.onclick = function (event) {
+                if (event.target == basicModal) {
+                    basicModal.style.display = "none";
+                }
+            }
+            // ------------------------ Script for pro
+            // Get modal, button, <span>
+            var proModal = document.getElementById("proModal");
+            var proButton = document.getElementById("proButton");
+            var proClose = document.getElementsByClassName("proClose")[0];
 
-    // UserClick-button = open
-        btn.onclick = function() {
-        modal.style.display = "block";
-        }
-    // UserClick-<span>(x) = close
-        span.onclick = function() {
-        modal.style.display = "none";
-        }  
-    // UserClick-Outside = close
-        window.onclick = function(event) {
-            if (event.target == modal) {
+            // UserClick-button = open
+            proButton.onclick = function () {
+                proModal.style.display = "block";
+            }
+            // UserClick-<span>(x) = close
+            proClose.onclick = function () {
+                proModal.style.display = "none";
+            }
+            // UserClick-Outside = close
+            window.onclick = function (event) {
+                if (event.target == proModal) {
+                    proModal.style.display = "none";
+                }
+            }
+            // ------------------------ Script for premium
+            // Get modal, button, <span>
+            var premiumModal = document.getElementById("premiumModal");
+            var premiumButton = document.getElementById("premiumButton");
+            var premiumClose = document.getElementsByClassName("premiumClose")[0];
+
+            // UserClick-button = open
+            premiumButton.onclick = function () {
+                premiumModal.style.display = "block";
+            }
+            // UserClick-<span>(x) = close
+            premiumClose.onclick = function () {
+                premiumModal.style.display = "none";
+            }
+            // UserClick-Outside = close
+            window.onclick = function (event) {
+                if (event.target == premiumModal) {
+                    premiumModal.style.display = "none";
+                }
+            }
+            // ------------------------ Script for Modal
+            // Get modal, button, <span>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+
+            // UserClick-button = open
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+            // UserClick-<span>(x) = close
+            span.onclick = function () {
                 modal.style.display = "none";
             }
-        }
+            // UserClick-Outside = close
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
 
-// ------------------------ Script for side navigation
-        function w3_open() {
-            var x = document.getElementById("mySidebar");
-            x.style.width = "300px";
-            x.style.paddingTop = "10%";
-            x.style.display = "block";
-        }
+            // ------------------------ Script for side navigation
+            function w3_open() {
+                var x = document.getElementById("mySidebar");
+                x.style.width = "300px";
+                x.style.paddingTop = "10%";
+                x.style.display = "block";
+            }
 
-        // Close side navigation
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
+            // Close side navigation
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
 
-        // Used to toggle the menu on smaller screens when clicking on the menu button
-        function openNav() {            
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }            
-        }
-    </script>
+            // Used to toggle the menu on smaller screens when clicking on the menu button
+            function openNav() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
 
-    <!-- Span von W3.css
+        <!-- Span von W3.css
     <span style="border-radius: 10px !important; text-indent: 12px !important; width: auto !important; height: 20px !important; padding: 0px 8px !important; text-align: center !important; vertical-align: middle !important; font: bold 11px / 20px &quot;Helvetica Neue&quot;, Helvetica, sans-serif !important; color: rgb(255, 255, 255) !important; background: url(&quot;data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNFNjAwMjMiPjwvY2lyY2xlPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNkMwIDguNTYxNSAxLjYwNTUgMTAuNzQ4NSAzLjg2NSAxMS42MDlDMy44MSAxMS4xNDA1IDMuNzUxNSAxMC4zNjggMy44Nzc1IDkuODI2QzMuOTg2IDkuMzYgNC41NzggNi44NTcgNC41NzggNi44NTdDNC41NzggNi44NTcgNC4zOTk1IDYuNDk5NSA0LjM5OTUgNS45N0M0LjM5OTUgNS4xNCA0Ljg4MDUgNC41MiA1LjQ4IDQuNTJDNS45OSA0LjUyIDYuMjM2IDQuOTAyNSA2LjIzNiA1LjM2MUM2LjIzNiA1Ljg3MzUgNS45MDk1IDYuNjM5NSA1Ljc0MSA3LjM1QzUuNjAwNSA3Ljk0NDUgNi4wMzk1IDguNDI5NSA2LjYyNTUgOC40Mjk1QzcuNjg3IDguNDI5NSA4LjUwMzUgNy4zMSA4LjUwMzUgNS42OTRDOC41MDM1IDQuMjYzNSA3LjQ3NTUgMy4yNjQgNi4wMDggMy4yNjRDNC4zMDkgMy4yNjQgMy4zMTE1IDQuNTM4NSAzLjMxMTUgNS44NTZDMy4zMTE1IDYuMzY5NSAzLjUwOSA2LjkxOTUgMy43NTYgNy4yMTlDMy44MDQ1IDcuMjc4NSAzLjgxMiA3LjMzIDMuNzk3NSA3LjM5MDVDMy43NTIgNy41Nzk1IDMuNjUxIDcuOTg1IDMuNjMxNSA4LjA2OEMzLjYwNSA4LjE3NyAzLjU0NSA4LjIwMDUgMy40MzE1IDguMTQ3NUMyLjY4NTUgNy44MDA1IDIuMjE5NSA2LjcxIDIuMjE5NSA1LjgzNEMyLjIxOTUgMy45NDk1IDMuNTg4IDIuMjE5NSA2LjE2NTUgMi4yMTk1QzguMjM3NSAyLjIxOTUgOS44NDggMy42OTYgOS44NDggNS42NjlDOS44NDggNy43Mjc1IDguNTUwNSA5LjM4NDUgNi43NDg1IDkuMzg0NUM2LjE0MyA5LjM4NDUgNS41NzQ1IDkuMDY5NSA1LjM3OTUgOC42OThDNS4zNzk1IDguNjk4IDUuMDggOS44MzkgNS4wMDc1IDEwLjExOEM0Ljg2NjUgMTAuNjYgNC40NzU1IDExLjM0NiA0LjIzMyAxMS43MzU1QzQuNzkyIDExLjkwNzUgNS4zODUgMTIgNiAxMkM5LjMxMzUgMTIgMTIgOS4zMTM1IDEyIDZDMTIgMi42ODY1IDkuMzEzNSAwIDYgMEMyLjY4NjUgMCAwIDIuNjg2NSAwIDZaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=&quot;) 4px 50% / 12px 12px no-repeat rgb(230, 0, 35) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; -webkit-font-smoothing: antialiased !important; top: 10px; left: 10px;">Merken</span><span style="border-radius: 12px; width: 24px !important; height: 24px !important; background: url(&quot;data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iMTEiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuOCI+PC9jaXJjbGU+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTUuMDgzNCA0LjU4MzMzSDEzLjMzMzRWNS43NDk5OUgxNS4wODM0QzE1LjcyNjggNS43NDk5OSAxNi4yNSA2LjI3MzI0IDE2LjI1IDYuOTE2NjZWOC42NjY2NkgxNy40MTY3VjYuOTE2NjZDMTcuNDE2NyA1LjYyOTgzIDE2LjM3MDIgNC41ODMzMyAxNS4wODM0IDQuNTgzMzNaTTE2LjI1IDE1LjA4MzNDMTYuMjUgMTUuNzI2NyAxNS43MjY4IDE2LjI1IDE1LjA4MzQgMTYuMjVIMTMuMzMzNFYxNy40MTY3SDE1LjA4MzRDMTYuMzcwMiAxNy40MTY3IDE3LjQxNjcgMTYuMzcwMiAxNy40MTY3IDE1LjA4MzNWMTMuMzMzM0gxNi4yNVYxNS4wODMzWk01Ljc1MDA0IDE1LjA4MzNWMTMuMzMzM0g0LjU4MzM3VjE1LjA4MzNDNC41ODMzNyAxNi4zNzAyIDUuNjI5ODcgMTcuNDE2NyA2LjkxNjcxIDE3LjQxNjdIOC42NjY3MVYxNi4yNUg2LjkxNjcxQzYuMjczMjkgMTYuMjUgNS43NTAwNCAxNS43MjY3IDUuNzUwMDQgMTUuMDgzM1pNNS43NTAwNCA2LjkxNjY2QzUuNzUwMDQgNi4yNzMyNCA2LjI3MzI5IDUuNzQ5OTkgNi45MTY3MSA1Ljc0OTk5SDguNjY2NzFWNC41ODMzM0g2LjkxNjcxQzUuNjI5ODcgNC41ODMzMyA0LjU4MzM3IDUuNjI5ODMgNC41ODMzNyA2LjkxNjY2VjguNjY2NjZINS43NTAwNFY2LjkxNjY2Wk05LjI1MDA0IDEwLjcwODNDOS4yNTAwNCA5LjkwNDQ5IDkuOTA0NTQgOS4yNDk5OSAxMC43MDg0IDkuMjQ5OTlDMTEuNTEyMiA5LjI0OTk5IDEyLjE2NjcgOS45MDQ0OSAxMi4xNjY3IDEwLjcwODNDMTIuMTY2NyAxMS41MTIyIDExLjUxMjIgMTIuMTY2NyAxMC43MDg0IDEyLjE2NjdDOS45MDQ1NCAxMi4xNjY3IDkuMjUwMDQgMTEuNTEyMiA5LjI1MDA0IDEwLjcwODNaTTEzLjYyNSAxNC41QzEzLjg0OSAxNC41IDE0LjA3MyAxNC40MTQ4IDE0LjI0NCAxNC4yNDM5QzE0LjU4NTIgMTMuOTAyMSAxNC41ODUyIDEzLjM0NzkgMTQuMjQ0IDEzLjAwNjFMMTMuMDcwMyAxMS44MzNDMTMuMjM0MiAxMS40OTA2IDEzLjMzMzQgMTEuMTEyNiAxMy4zMzM0IDEwLjcwODNDMTMuMzMzNCA5LjI2MTA4IDEyLjE1NTYgOC4wODMzMyAxMC43MDg0IDguMDgzMzNDOS4yNjExMiA4LjA4MzMzIDguMDgzMzcgOS4yNjEwOCA4LjA4MzM3IDEwLjcwODNDOC4wODMzNyAxMi4xNTU2IDkuMjYxMTIgMTMuMzMzMyAxMC43MDg0IDEzLjMzMzNDMTEuMTEyNiAxMy4zMzMzIDExLjQ5MDYgMTMuMjM0MiAxMS44MzMgMTMuMDcwMkwxMy4wMDYxIDE0LjI0MzlDMTMuMTc3IDE0LjQxNDggMTMuNDAxIDE0LjUgMTMuNjI1IDE0LjVaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=&quot;) 50% 50% / 24px 24px no-repeat rgba(0, 0, 0, 0.4) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; top: 10px; left: 1871px;"></span>-->
 </body>
+
 </html>

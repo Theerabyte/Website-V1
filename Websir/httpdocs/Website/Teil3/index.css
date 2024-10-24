@@ -14,18 +14,34 @@ body {
 nav {
     margin: 0 5%;
     display: flex;
-    justify-content: flex-end;
-    text-align: right;
+    justify-content: flex-end; 
+    text-align: right; 
     background: #087282;
     padding: 10px 0;
 }
 
-nav a {
-    color:black;
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px; 
+    cursor: pointer;
+    display: none; 
+}
+
+.menu {
+    display: flex; 
+    justify-content: flex-end; 
+    text-align: right;
+}
+
+nav a, nav button {
+    color: black;
     text-decoration: none;
     padding: 15px 20px;
     transition: background 0.3s;
 }
+
 nav a:hover {
     background: #78caeb;
 }
@@ -34,41 +50,50 @@ nav button {
     background: #93bfe1;
     color: black; 
     border: none;
-    padding: 2px 10px;
+    padding: 5px 15px; 
     margin: 0 15px; 
     border-radius: 20px; 
     cursor: pointer; 
     transition: background 0.3s; 
     text-align: center; 
     display: inline-block; 
-    text-decoration: none;  
 }
 
 nav button:hover {
     background: #78caeb; 
 }
 
-div {
-    max-width: 800px;
-    margin: 20px auto;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 800px;  
+    margin: 20px auto; 
+}
+
+.abme, .HnI {
+    flex: 1; 
+    margin: 10px; 
     padding: 20px;
     background: #3bc9db;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+    min-width: 280px; 
 }
 
 h2 {
-    color: #060667;
     font-family: Lobster;
+    color: #060667;
+    text-align: center;
 }
 
-#logo{
- height:25%;
+#logo {
+    height: 25%;
 }
 
 footer {
     text-align: right;
-    padding: 10px 10px;
+    padding: 10px;
     background: #99e9f2;
     color: rgb(75, 74, 107);
     position: relative;
@@ -81,8 +106,48 @@ footer {
         flex-direction: column;
     }
 
-    nav a {
+    .menu {
+        display: none;
+        flex-direction: column; 
+        width: 100%; 
+        background: #087282; 
+        padding: 10px 0; 
+    }
+
+    .menu.show {
+        display: flex; 
+    }
+
+    .menu-button {
+        display: block; 
+    }
+    
+    nav a,
+    nav button {
         padding: 10px;
         text-align: center;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .abme, .HnI {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 5px 0; 
+    }
+
+    nav a,
+    nav button {
+        font-size: 14px; 
+    }
+
+    .abme, .HnI {
+        padding: 15px; 
     }
 }

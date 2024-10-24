@@ -14,17 +14,25 @@
         <a href="./tdf.html">PDF</a>
         <a href="./kont.html">Kontakt</a>
         <button id="linkButton">ENG / DE</button>
-        <script>document.getElementById("linkButton").onclick = function() {
-            window.location.href = "../index.html";
-            };
-        </script>
     </nav>
-    <div>
-        <h2>Hallo Nutzer</h2>
-        <p>Ich bin dein virtueller Assistent.</p>
+    <div   class="flex-container">
+        <div class="abme">
+            <h2>Über mich:</h2>
+            <p>Ich heisse Naomi</p>
+        </div>
+        <div class="HnI">
+            <h2>Hobbys und Interessen</h2>
+            <!--Bildergallerie-->
+            <p>Eiskunstlaufen, Tanzen, Backen, Lesen, Gamen, Schlafen, Katzen</p>
+        </div>
     </div>
     <footer>
         <p>HS 2024 Gibb | N.Bächler</p>
     </footer>
+    <script>
+        document.getElementById("linkButton").onclick = function() {
+            window.location.href = "../index.html";
+        };
+    </script>
 </body>
 </html>

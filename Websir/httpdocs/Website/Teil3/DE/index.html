@@ -8,12 +8,15 @@
 </head>
 <body>
     <nav>
+        <button id="menuButton" class="menu-button">☰</button>
+        <div class="menu">
         <a href="./inDEx.html">Index</a>
         <a href="./ll.html">Lebenslauf</a>
         <a href="./zerti.html">Zertifikate</a>
         <a href="./tdf.html">PDF</a>
         <a href="./kont.html">Kontakt</a>
         <button id="linkButton">ENG / DE</button>
+        </div>
     </nav>
     <div   class="flex-container">
         <div class="abme">
@@ -32,6 +35,13 @@
     <script>
         document.getElementById("linkButton").onclick = function() {
             window.location.href = "../index.html";
+        };
+
+        const menuButton = document.getElementById("menuButton");
+        const menu = document.querySelector(".menu");
+
+        menuButton.onclick = function() {
+            menu.classList.toggle("show");
         };
     </script>
 </body>

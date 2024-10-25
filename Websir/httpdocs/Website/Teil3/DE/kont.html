@@ -8,18 +8,17 @@
 </head>
 <body>
     <nav>
+        <button id="menuButton" class="menu-button">☰</button>
+        <div class="menu">
         <a href="./inDEx.html">Index</a>
         <a href="./ll.html">Lebenslauf</a>
         <a href="./zerti.html">Zertifikate</a>
         <a href="./tdf.html">PDF</a>
         <a href="./kont.html">Kontakt</a>
         <button id="linkButton">ENG / DE</button>
-        <script>document.getElementById("linkButton").onclick = function() {
-            window.location.href = "../cont.html";
-            };
-        </script>
+        </div>
     </nav>
-    <div>
+    <div class="column">
         <h2>Hallo</h2>
         <p>Auf dieser Seite können sie mich via Formular kontaktieren.</p>
         <form>
@@ -29,5 +28,17 @@
     <footer>
         <p>HS 2024 Gibb | N.Bächler</p>
     </footer>
+    <script>
+        document.getElementById("linkButton").onclick = function() {
+            window.location.href = "../cont.html";
+        };
+        
+        const menuButton = document.getElementById("menuButton");
+        const menu = document.querySelector(".menu");
+
+        menuButton.onclick = function() {
+            menu.classList.toggle("show");
+        };
+    </script>
 </body>
 </html>

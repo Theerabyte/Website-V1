@@ -8,23 +8,33 @@
 </head>
 <body>
     <nav>
-        <a href="./index.html">Home</a> 
-        <a href="./cv.html">CV</a> 
-        <a href="./certi.html">Certificates</a> 
-        <a href="./pdf.html">PDF</a> 
-        <a href="./cont.html">Contact</a> 
-        <button id="linkButton">ENG / DE</button>
-        <script>document.getElementById("linkButton").onclick = function() {
-            window.location.href = "./DE/kont.html";
-            };
-        </script>
+        <button id="menuButton" class="menu-button">☰</button>
+        <div class="menu">
+            <a href="./index.html">Home</a> 
+            <a href="./cv.html">CV</a> 
+            <a href="./certi.html">Certificates</a> 
+            <a href="./pdf.html">PDF</a> 
+            <a href="./cont.html">Contact</a> 
+            <button id="linkButton">ENG / DE</button>
+        </div>
     </nav>
-    <div>
+    <div class="column">
         <h2>Hello</h2>
         <p>On this page you can contact me via email <br>My BWD-Email: "naomi.baechler@bwdbern.ch" <br>My Gibb-Email: "nba149415@stud.gibb.ch"</p>
     </div>
     <footer>
         <p>HS 2024 Gibb | N.Bächler</p>
     </footer>
+    <script>document.getElementById("linkButton").onclick = function() {
+        window.location.href = "./DE/kont.html";
+        };
+        
+        const menuButton = document.getElementById("menuButton");
+        const menu = document.querySelector(".menu");
+
+        menuButton.onclick = function() {
+            menu.classList.toggle("show");
+        };
+    </script>
 </body>
 </html>

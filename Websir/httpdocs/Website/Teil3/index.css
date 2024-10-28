@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
 body {
@@ -103,7 +103,13 @@ div.desc {
 .responsive {
     padding: 0 6px;
     float: left;
-    width: 49%;
+    width: 50%;
+}
+
+.pics {
+    display: grid;
+    gap: 1%;
+    grid-auto-flow: column;
 }
 
 .clearfix:after {

@@ -1,11 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    
+    font-family: Futura;
 }
-
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #35424a;
     color: #333;
@@ -19,33 +17,15 @@ nav {
     background: #087282;
     padding: 10px 0;
 }
-
-.menu-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px; 
-    cursor: pointer;
-    display: none; 
-}
-
-.menu {
-    display: flex; 
-    justify-content: flex-end; 
-    text-align: right;
-}
-
 nav a, nav button {
     color: black;
     text-decoration: none;
     padding: 15px 20px;
     transition: background 0.3s;
 }
-
 nav a:hover {
     background: #78caeb;
 }
-
 nav button {
     background: #93bfe1;
     color: black; 
@@ -58,11 +38,47 @@ nav button {
     text-align: center; 
     display: inline-block; 
 }
-
 nav button:hover {
     background: #78caeb; 
 }
 
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px; 
+    cursor: pointer;
+    display: none; 
+}
+.menu {
+    font-family:Lobster;
+    display: flex; 
+    justify-content: flex-end; 
+    text-align: right;
+}
+
+h2 {
+    font-family: Lobster;
+    color: #060667;
+    text-align: center;
+}
+h4 {
+    font-family: Futura;
+    color: #333;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background: #99e9f2;
+    color: rgb(75, 74, 107);
+    padding:12px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/*-------------------------- Page : INDEX ----------------------- */
 .flex-container {
     display: flex;
     flex-wrap: wrap; 
@@ -118,7 +134,6 @@ div.desc {
     clear: both;
 }
 
-/* */
 .column{
     max-width: 800px;  
     margin: 20px auto; 
@@ -129,23 +144,80 @@ div.desc {
     min-width: 280px; 
 }
 
-h2 {
-    font-family: Lobster;
-    color: #060667;
+/*-------------------------- Page : CV ----------------------- */
+.content{
+    max-width: 800px; 
+    margin: 20px auto;
+    padding: 20px;
+    background: #3bc9db; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     text-align: center;
 }
 
-footer {
-    text-align: right;
-    padding: 10px;
-    background: #99e9f2;
-    color: rgb(75, 74, 107);
-    position: relative;
-    bottom: 0;
-    width: 100%;
+/*-------------------------- Page : CONTACT ----------------------- */
+.section{
+    margin-top: 16px!important;
+    margin-bottom: 16px!important
+}
+.input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #3cc1ff;
+    width: 100%
+}
+textarea.input {
+    height: 150px; 
+    font-family: inherit; 
+}
+button{
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background-color: #087282;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
-@media (max-width: 600px) {
+/*---------   -------------- Page : CERTIFICATES ---------------- */
+.content{
+    max-width: 800px; 
+    margin: 20px auto;
+    padding: 20px;
+    background: #3bc9db; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+/*-------------------------- Page : PDF ------------------------- */
+
+
+
+/* FONTS */
+@font-face {
+    font-family: 'Futura';
+    src: url('dir/futura/FuturaPTBook.otf') format('opentype'); 
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src:url('dir/lobster/Lobster-Regular.ttf') format('truetype');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Query for Menu animation */
+@media (max-width: 800px) {
     nav {
         flex-direction: column;
     }
@@ -181,7 +253,8 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+/* Query for index animation */
+@media (max-width: 850px) {
     nav {
         padding: 5px 0; 
     }
@@ -196,15 +269,28 @@ footer {
     }
 }
 
+/* Query for IMG-Gallery responsiveness */
 @media only screen and (max-width: 700px) {
     .responsive {
       width: 49.%;
       margin: 6px 0;
     }
 }
-  
 @media only screen and (max-width: 500px) {
     .responsive {
       width: 100%;
+    }
+}
+
+/* Query for CV animation */
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .left, .right {
+        margin: 10px 0;
     }
 }

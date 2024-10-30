@@ -21,18 +21,19 @@
     <div class="column">
         <h2>Hello</h2>
         <h4>Here you may contact me if you wish : </h4>
-        <form class="form">
+        <form class="form" id="myform">
             <div class="section">
                 <label>Name and Surname</label>
-                <input class="input" type="text" name="Name" requiredl="" placeholder="Your Name and Surname">
+                <input class="input" type="text" name="Name" required minlength="3" placeholder="Your Name and Surname">
+
             </div>
             <div class="section">
                 <label>Email</label>
-                <input class="input" type="email" name="Email" required="" placeholder="Your Email">
+                <input class="input" type="email" name="Email" required placeholder="Your Email">
             </div>
             <div class="section">
                 <label>Message</label>
-                <textarea class="input" name="Message" required="" rows="4" placeholder="Your Message"></textarea>
+                <textarea class="input" name="Message" rows="4" required minlength="10" placeholder="Your Message"></textarea>
             </div>
             <button class="submit" type="submit">Send</button>
         </form>
@@ -50,6 +51,11 @@
         menuButton.onclick = function() {
             menu.classList.toggle("show");
         };
+
+        function resetForm() {
+            document.getElementById('myform').reset();
+        }
+        window.onload = resetForm;
     </script>
 </body>
 </html>

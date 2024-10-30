@@ -10,7 +10,7 @@
     <nav>
         <button id="menuButton" class="menu-button">☰</button>
         <div class="menu">
-        <a href="./inDEx.html">Index</a>
+        <a href="./inDEx.html">Startseite</a>
         <a href="./ll.html">Lebenslauf</a>
         <a href="./zerti.html">Zertifikate</a>
         <a href="./tdf.html">PDF</a>
@@ -21,18 +21,18 @@
     <div class="column">
         <h2>Hallo</h2>
         <h4>Hier können Sie mit mir Kontankt aufnehmen, wenn Sie möchten :</h4>
-        <form class="form">
+        <form class="form" id="myform">
             <div class="section">
                 <label>Vor- und Nachname</label>
-                <input class="input" type="text" name="Name" required="">
+                <input class="input" type="text" name="Name" required minlength="3" placeholder="Ihr Vor- und Nachname">
             </div>
             <div class="section">
                 <label>Email</label>
-                <input class="input" type="email" name="Email" required="">
+                <input class="input" type="email" name="Email" required placeholder="Ihre Email">
             </div>
             <div class="section">
                 <label>Nachricht</label>
-                <textarea class="input" name="Message" required="" rows="4"></textarea>
+                <textarea class="input" name="Message" rows="4" required minlength="4" placeholder="Ihre Nachricht"></textarea>
             </div>
             <button class="submit" type="submit">Send</button>
         </form>
@@ -51,6 +51,11 @@
         menuButton.onclick = function() {
             menu.classList.toggle("show");
         };
+
+        function resetForm() {
+            document.getElementById('myform').reset();
+        }
+        window.onload = resetForm;
     </script>
 </body>
 </html>

@@ -20,7 +20,47 @@
     </nav>
     <div class="column">
         <h2>Hello</h2>
-        <p>This page is for register users only - Sorry</p>
+        <p>
+            This page is for register users only - Sorry
+        </p>
+        <br>
+        <hr>
+        <br>
+            <button id="impressumButton" style="margin-left: 45%;">Impressum</button>
+        <br>
+        <br>
+        <hr>
+    </div>
+    <div id="impressumModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="bgc">
+                <h2>Impressum</h2>
+                <br><h3>Contact:</h3>
+                <p>
+                    E-Mail: nba149415@stud.gibb.ch<br>
+                    Telephone: +41 79 659 21 76
+                </p>
+                <br><h3>Responsible for the content according to § 55 Paragraph 2 RStV:</h3>
+                <p>
+                    Naomi Bächler<br>
+                    WUhlstrasse 38<br>
+                    3068 Utzigen<br>
+                    Schweiz
+                </p>
+                <br><h3>Liability-Notice:</h3>
+                <p>
+                    Despite careful content control, I assume no liability for the content of external links.<br>
+                    The operators of the linked pages are solely responsible for the content of the linked pages.
+                </p>
+                <br><h3>Copyright-Notice</h3>
+                <p>
+                    The contents and works created by the site operators on this website are subject to Swiss copyright law.<br>
+                    The reproduction, processing, distribution and any kind of exploitation outside the limits of copyright law
+                    require the written consent of the respective creator.
+                </p>
+            </div>
+        </div>
     </div>
     <footer>
         <p>HS 2024 Gibb | N.Bächler</p>
@@ -35,6 +75,22 @@
 
         menuButton.onclick = function() {
             menu.classList.toggle("show");
+        };
+        
+        document.getElementById("impressumButton").onclick = function() {
+            document.getElementById("impressumModal").style.display = "block";
+        };
+
+        const closeModal = document.querySelector(".close");
+        closeModal.onclick = function() {
+            document.getElementById("impressumModal").style.display = "none";
+        };
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("impressumModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         };
     </script>
 </body>

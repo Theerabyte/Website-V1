@@ -30,6 +30,13 @@
                 <br><br>
                 Up until now, I do not know how my future will look, but one thing that is a goal of mine is joining the military in the department of Airfield soldiers. Another goal I would like to achieve in my life is traveling through several countries, but I am not quite yet ambitious about that one.
             </p>
+            <br>
+            <hr>
+            <br>
+                <button id="impressumButton" style="margin-left: 40%;">Impressum</button>
+            <br>
+            <br>
+            <hr>
         </div>
         <div class="HnI">
             <h2>Hobbies and Interests</h2>
@@ -73,8 +80,39 @@
                 <p>During summerbreak I usually do the following four activities: gaming, sleeping, swimming and spending time with my kitten. Although I enjoy every listed activity through out the year.</p>
             </div>
         </div>
+        <div id="impressumModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="bgc">
+                    <h2>Impressum</h2>
+                    <br><h3>Contact:</h3>
+                    <p>
+                        E-Mail: nba149415@stud.gibb.ch<br>
+                        Telephone: +41 79 659 21 76
+                    </p>
+                    <br><h3>Responsible for the content according to § 55 Paragraph 2 RStV:</h3>
+                    <p>
+                        Naomi Bächler<br>
+                        WUhlstrasse 38<br>
+                        3068 Utzigen<br>
+                        Schweiz
+                    </p>
+                    <br><h3>Liability-Notice:</h3>
+                    <p>
+                        Despite careful content control, I assume no liability for the content of external links.<br>
+                        The operators of the linked pages are solely responsible for the content of the linked pages.
+                    </p>
+                    <br><h3>Copyright-Notice</h3>
+                    <p>
+                        The contents and works created by the site operators on this website are subject to Swiss copyright law.<br>
+                        The reproduction, processing, distribution and any kind of exploitation outside the limits of copyright law
+                        require the written consent of the respective creator.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer>
+    <footer class="y">
         <p>HS 2024 Gibb | N.Bächler</p>
     </footer>
     <script>
@@ -87,6 +125,22 @@
 
         menuButton.onclick = function() {
             menu.classList.toggle("show");
+        };
+        
+        document.getElementById("impressumButton").onclick = function() {
+            document.getElementById("impressumModal").style.display = "block";
+        };
+
+        const closeModal = document.querySelector(".close");
+        closeModal.onclick = function() {
+            document.getElementById("impressumModal").style.display = "none";
+        };
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("impressumModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         };
     </script>
 </body>

@@ -20,7 +20,47 @@
     </nav>
     <div class="column">
         <h2>Hallo</h2>
-        <p>Diese Seite ist nur zugängliche für registrierte Nutzer - Entschuldigung</p>
+        <p>
+            Diese Seite ist nur zugängliche für speziell registrierte Nutzer - Entschuldigung
+        </p>
+        <br>
+        <hr>
+        <br>
+            <button id="impressumButton" style="margin-left: 40%;">Impressum</button>
+        <br>
+        <br>
+        <hr>
+    </div>
+    <div id="impressumModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+            <div class="bgc">
+                <h2>Impressum</h2>
+                <br><h3>Kontakt:</h3>
+                <p>
+                    E-Mail: nba149415@stud.gibb.ch<br>
+                    Telefon: +41 79 659 21 76
+                </p>
+                <br><h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h3>
+                <p>
+                    Naomi Bächler<br>
+                    WUhlstrasse 38<br>
+                    3068 Utzigen<br>
+                    Schweiz
+                </p>
+                <br><h3>Haftungs-Hinweis:</h3>
+                <p>
+                    Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links.<br>
+                    Für den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich. 
+                </p>
+                <br><h3>Copyright-Hinweis</h3>
+                <p>
+                    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem Schweizer Urheberrecht.<br>
+                    Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung ausserhalb der Grenzen des Urheberrechtes 
+                    bedürfen der schriftlichen Zustimmung des jeweiligen Erstellers.
+                </p>
+            </div>
+        </div>
     </div>
     <footer>
         <p>HS 2024 Gibb | N.Bächler</p>
@@ -35,6 +75,22 @@
 
         menuButton.onclick = function() {
             menu.classList.toggle("show");
+        };
+        
+        document.getElementById("impressumButton").onclick = function() {
+            document.getElementById("impressumModal").style.display = "block";
+        };
+
+        const closeModal = document.querySelector(".close");
+        closeModal.onclick = function() {
+            document.getElementById("impressumModal").style.display = "none";
+        };
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("impressumModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         };
     </script>
 </body>

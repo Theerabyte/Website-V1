@@ -21,15 +21,50 @@
     <div class="content">
         <h2>Hello</h2>
         <h4>On this page, you will be informed about my educational and non-educational path.</h4><br>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
-            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
-            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
-            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
         </p>
+        <br>
+        <hr>
+        <br>
+            <button id="impressumButton">Impressum</button>
+        <br>
+        <br>
+        <hr>
     </div>
-    <footer>
+    <div id="impressumModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="bgc">
+                <h2>Impressum</h2>
+                <br><h3>Contact:</h3>
+                <p>
+                    E-Mail: nba149415@stud.gibb.ch<br>
+                    Telephone: +41 79 659 21 76
+                </p>
+                <br><h3>Responsible for the content according to § 55 Paragraph 2 RStV:</h3>
+                <p>
+                    Naomi Bächler<br>
+                    WUhlstrasse 38<br>
+                    3068 Utzigen<br>
+                    Schweiz
+                </p>
+                <br><h3>Liability-Notice:</h3>
+                <p>
+                    Despite careful content control, I assume no liability for the content of external links.<br>
+                    The operators of the linked pages are solely responsible for the content of the linked pages.
+                </p>
+                <br><h3>Copyright-Notice</h3>
+                <p>
+                    The contents and works created by the site operators on this website are subject to Swiss copyright law.<br>
+                    The reproduction, processing, distribution and any kind of exploitation outside the limits of copyright law
+                    require the written consent of the respective creator.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="y">
         <p>HS 2024 Gibb | N.Bächler</p>
     </footer>
     <script>
@@ -42,6 +77,22 @@
 
         menuButton.onclick = function() {
             menu.classList.toggle("show");
+        };
+        
+        document.getElementById("impressumButton").onclick = function() {
+            document.getElementById("impressumModal").style.display = "block";
+        };
+
+        const closeModal = document.querySelector(".close");
+        closeModal.onclick = function() {
+            document.getElementById("impressumModal").style.display = "none";
+        };
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("impressumModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         };
     </script>
 </body>

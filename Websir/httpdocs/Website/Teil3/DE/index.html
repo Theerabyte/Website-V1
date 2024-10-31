@@ -30,6 +30,13 @@
                 <br><br>
                 Wie genau meine Zukunft aussieht, bin ich mir noch nicht ganz sicher, jedoch möchte ich sehr sicher ins Militär als FLugplatzsoldatin gehen. Ich würde auch gerne einige Länder bereise, jedoch ist dies ein Ziel, welches ich noch nicht sehr aktiv verfolge.
             </p>
+            <br>
+            <hr>
+            <br>
+                <button id="impressumButton" style="margin-left: 40%;">Impressum</button>
+            <br>
+            <br>
+            <hr>
         </div>
         <div class="HnI">
             <h2>Hobbys und Interessen</h2>
@@ -73,9 +80,39 @@
                 <p>In den Sommerferien mache ich meistens diese aktivitäten:  gamen, schlafen, schwimmen und mit meiner Katze zeitverbringen. Obwohl ich jede hier aufgelistete Aktivität immer gerne tue.</p>
             </div>
         </div>
+        <div id="impressumModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="bgc">
+                    <h2>Impressum</h2>
+                    <br><h3>Kontakt:</h3>
+                    <p>
+                        E-Mail: nba149415@stud.gibb.ch<br>
+                        Telefon: +41 79 659 21 76
+                    </p>
+                    <br><h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h3>
+                    <p>
+                        Naomi Bächler<br>
+                        WUhlstrasse 38<br>
+                        3068 Utzigen<br>
+                        Schweiz
+                    </p>
+                    <br><h3>Haftungs-Hinweis:</h3>
+                    <p>
+                        Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links.<br>
+                        Für den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich. 
+                    </p>
+                    <br><h3>Copyright-Hinweis</h3>
+                    <p>
+                        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem Schweizer Urheberrecht.<br>
+                        Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung ausserhalb der Grenzen des Urheberrechtes 
+                        bedürfen der schriftlichen Zustimmung des jeweiligen Erstellers.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <footer>
+    <footer class="y">
         <p>HS 2024 Gibb | N.Bächler</p>
     </footer>
     <script>
@@ -88,6 +125,22 @@
 
         menuButton.onclick = function() {
             menu.classList.toggle("show");
+        };
+        
+        document.getElementById("impressumButton").onclick = function() {
+            document.getElementById("impressumModal").style.display = "block";
+        };
+
+        const closeModal = document.querySelector(".close");
+        closeModal.onclick = function() {
+            document.getElementById("impressumModal").style.display = "none";
+        };
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("impressumModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         };
     </script>
 </body>

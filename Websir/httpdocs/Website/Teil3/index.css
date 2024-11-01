@@ -166,6 +166,12 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
     min-width: 280px; 
 }
+.Me {
+    display: block; 
+    max-width: 100%;
+    height: auto; 
+    margin: 20px auto; 
+}
 
 /* Picture Gallery*/
 div.gallery {
@@ -244,14 +250,22 @@ div.desc {
 /* ------------------------- Page : CONTACT ---------------------- */ 
 .section {
     margin-top: 16px!important;
-    margin-bottom: 16px!important
+    margin-bottom: 16px!important;
 }
+#myfor{
+    width: 98% !important;
+}
+label{
+    display: flex;
+    text-align: left;
+    }
+
 .input {
     padding: 8px;
     display: block;
     border: none;
     border-bottom: 1px solid #3cc1ff;
-    width: 100%
+    width: 100%;
 }
 textarea.input {
     height: 150px; 
@@ -394,6 +408,11 @@ table {
 
     .abme, .HnI {
         padding: 15px; 
+    }
+}
+@media (max-width: 600px) {
+    .Me {
+        max-width: 90%; 
     }
 }
 
